@@ -1,0 +1,123 @@
+[
+    {
+      "movie": "Hall Pass",
+      "year": 2011,
+      "release_date": "2011-02-25",
+      "director": "Peter Farrelly and Bobby Farrelly",
+      "character": "Rick Mills",
+      "movie_duration": "01:51:35",
+      "timestamp": "01:26:28",
+      "full_line": "Wow.",
+      "current_wow_in_movie": 6,
+      "total_wows_in_movie": 6,
+      "poster": "https://images.ctfassets.net/bs8ntwkklfua/6jFEUPmYiKifaTuC2cugm8/22087834d091445fc9393cdd9163a901/Hall_Pass_Poster.jpg",
+      "video": {
+        "1080p": "https://videos.ctfassets.net/bs8ntwkklfua/V9JGQ3qgfufm4vUkzyJYI/6182dce642b9f31ab698d7ab448688bd/Hall_Pass_Wow_6_1080p.mp4",
+        "720p": "https://videos.ctfassets.net/bs8ntwkklfua/3RkKyI4NFfakkYzUEO83hG/21d29c6b7695d1b072084a92e05b6283/Hall_Pass_Wow_6_720p.mp4",
+        "480p": "https://videos.ctfassets.net/bs8ntwkklfua/54Zd2b5BQrQi4hvZ8IAg8j/9a719307cdf6525257e0dba0afa9ceee/Hall_Pass_Wow_6_480p.mp4",
+        "360p": "https://videos.ctfassets.net/bs8ntwkklfua/7Jo3JA6zl3vzAiIkriLLOR/5f488e12cdc1c7792484f098732b790d/Hall_Pass_Wow_6_360p.mp4"
+      },
+      "audio": "https://assets.ctfassets.net/bs8ntwkklfua/7mZxDvl1IsR95NAg8mKj0t/43a0b44fd325c1de3f86cf6cec3a80d5/Hall_Pass_Wow_6.mp3"
+    },
+    {
+      "movie": "I Spy",
+      "year": 2002,
+      "release_date": "2002-10-23",
+      "director": "Betty Thomas",
+      "character": "Alexander Scott",
+      "movie_duration": "01:36:35",
+      "timestamp": "00:12:10",
+      "full_line": "Wow, that guy's so annoying.",
+      "current_wow_in_movie": 1,
+      "total_wows_in_movie": 3,
+      "poster": "https://images.ctfassets.net/bs8ntwkklfua/6qRNbbZZDNP3iY3sGlmHJp/46861dc3073138713ee9151d0f0a6cc4/I_Spy_Poster.jpg",
+      "video": {
+        "1080p": "https://videos.ctfassets.net/bs8ntwkklfua/7nBePBSHSoJpZnxwswQbm9/89eeca7feae03d6d92af1a3ac82f4091/I_Spy_Wow_1_1080p.mp4",
+        "720p": "https://videos.ctfassets.net/bs8ntwkklfua/JzWFqiHiSJpv8O2cLAD3V/4b203f71418d68281b45387a3d10041c/I_Spy_Wow_1_720p.mp4",
+        "480p": "https://videos.ctfassets.net/bs8ntwkklfua/1RGawbKaI6cP3vYo8hyhIJ/70af30e32b26ec8c3ba557a6d2f112b2/I_Spy_Wow_1_480p.mp4",
+        "360p": "https://videos.ctfassets.net/bs8ntwkklfua/7Mp7Co4W4r2DudnNtNZJhV/cca19b1fe98f5a13276c5e1f428907ce/I_Spy_Wow_1_360p.mp4"
+      },
+      "audio": "https://assets.ctfassets.net/bs8ntwkklfua/2Lwps9udSteIAJ6QNqlc7s/8d509768455fbe2cb802641211b6aac2/I_Spy_Wow_1.mp3"
+    },
+    {
+      "movie": "I Spy",
+      "year": 2002,
+      "release_date": "2002-10-23",
+      "director": "Betty Thomas",
+      "character": "Alexander Scott",
+      "movie_duration": "01:36:35",
+      "timestamp": "00:49:41",
+      "full_line": "Wow, we're stuck.",
+      "current_wow_in_movie": 2,
+      "total_wows_in_movie": 3,
+      "poster": "https://images.ctfassets.net/bs8ntwkklfua/6qRNbbZZDNP3iY3sGlmHJp/46861dc3073138713ee9151d0f0a6cc4/I_Spy_Poster.jpg",
+      "video": {
+        "1080p": "https://videos.ctfassets.net/bs8ntwkklfua/1jFS12MR5aISqmhw1spzDe/d7be1629aa508428615ac078eed605bc/I_Spy_Wow_2_1080p.mp4",
+        "720p": "https://videos.ctfassets.net/bs8ntwkklfua/7hwGECMkO0lL1JH4ciDK2v/bfbced8a4b02b6d38087be29d3c1bb57/I_Spy_Wow_2_720p.mp4",
+        "480p": "https://videos.ctfassets.net/bs8ntwkklfua/wei3aiOGDPltJjZDz3qyw/c3d218cb0bf360a26f2a06178c4c1f9f/I_Spy_Wow_2_480p.mp4",
+        "360p": "https://videos.ctfassets.net/bs8ntwkklfua/6gszl9ewf6J2yUjAZkyLeo/93c2933b80d99ce8f250856e6eb7ea93/I_Spy_Wow_2_360p.mp4"
+      },
+      "audio": "https://assets.ctfassets.net/bs8ntwkklfua/7hqbnPZJ0gqNiuRmeEt547/0c06a0f62e74da6dd847416b3af380e0/I_Spy_Wow_2.mp3"
+    },
+    {
+      "movie": "Shanghai Knights",
+      "year": 2003,
+      "release_date": "2003-02-03",
+      "director": "David Dobkin",
+      "character": "Roy O'Bannon",
+      "movie_duration": "01:54:21",
+      "timestamp": "00:52:05",
+      "full_line": "Wow, look at this!",
+      "current_wow_in_movie": 2,
+      "total_wows_in_movie": 4,
+      "poster": "https://images.ctfassets.net/bs8ntwkklfua/4pb4EMrNtfK3x9PyTMLcGl/bd4d6db24a4247b0f33211eeb882c26a/Shanghai_Knights_Poster.jpg",
+      "video": {
+        "1080p": "https://videos.ctfassets.net/bs8ntwkklfua/5sh5zG45deju3no63NYxjz/7164b7c94e7942216205300158f8ee68/Shanghai_Knights_Wow_2_1080p.mp4",
+        "720p": "https://videos.ctfassets.net/bs8ntwkklfua/75UZ7QgK2eIKrjPCPNShUk/9d190b694e1b3d47df022eda47d130ad/Shanghai_Knights_Wow_2_720p.mp4",
+        "480p": "https://videos.ctfassets.net/bs8ntwkklfua/lmj6Wg0NzVCCxEeYZtFEo/b8ce31f27c910714666f61ebe1007985/Shanghai_Knights_Wow_2_480p.mp4",
+        "360p": "https://videos.ctfassets.net/bs8ntwkklfua/zHoyxfFdX5eXvjfc9vTHQ/d3b181d3533ae9d99f53cf02cf1f93d3/Shanghai_Knights_Wow_2_360p.mp4"
+      },
+      "audio": "https://assets.ctfassets.net/bs8ntwkklfua/HY1HVUJwet1h4Dlte0UYI/edb77c0e009d51a8a159764bf7281368/Shanghai_Knights_Wow_2.mp3"
+    },
+    {
+      "movie": "Midnight in Paris",
+      "year": 2011,
+      "release_date": "2011-05-20",
+      "director": "Woody Allen",
+      "character": "Gil Pender",
+      "movie_duration": "01:33:57",
+      "timestamp": "00:48:24",
+      "full_line": "Wow. No wonder she wanted to lead.",
+      "current_wow_in_movie": 2,
+      "total_wows_in_movie": 10,
+      "poster": "https://images.ctfassets.net/bs8ntwkklfua/2ZcfSCe2dlfoVzYMr4b9nK/d566e5ad044dee56645f3bffc7200d64/Midnight_in_Paris_Poster.jpg",
+      "video": {
+        "1080p": "https://videos.ctfassets.net/bs8ntwkklfua/6QiYUjjRwHa0Wn2qaKkH72/b87624851c0ddc6b41fa737e81be9ba9/Midnight_in_Paris_Wow_2_1080p.mp4",
+        "720p": "https://videos.ctfassets.net/bs8ntwkklfua/1UhPJNAXzgxqE1KvIktMXV/51fa47d9d21a7cf48e1ef3ac35ec4f13/Midnight_in_Paris_Wow_2_720p.mp4",
+        "480p": "https://videos.ctfassets.net/bs8ntwkklfua/3ybMmQK7Tt3Xs7MNbLyss7/8eca791f2c2ce06146be8844ab9ca511/Midnight_in_Paris_Wow_2_480p.mp4",
+        "360p": "https://videos.ctfassets.net/bs8ntwkklfua/7CCFtFdh21i1dBaxSImTIg/b35b20f4a393242b143fa094fa938674/Midnight_in_Paris_Wow_2_360p.mp4"
+      },
+      "audio": "https://assets.ctfassets.net/bs8ntwkklfua/4pMtMRK3uSK6KNodFS7p2v/7f688b6bc487958d59e7fae635d98df1/Midnight_in_Paris_Wow_2.mp3"
+    },
+    {
+      "movie": "The Big Bounce",
+      "year": 2004,
+      "release_date": "2004-01-30",
+      "director": "George Armitage",
+      "character": "Jack Ryan",
+      "movie_duration": "01:28:10",
+      "timestamp": "00:12:57",
+      "full_line": "Flippers and all. Wow.",
+      "current_wow_in_movie": 1,
+      "total_wows_in_movie": 2,
+      "poster": "https://images.ctfassets.net/bs8ntwkklfua/4hPpMWXhuXQ8HzLusmcaS5/4c46fa4fa8bce13b06d8b4444f6150ef/The_Big_Bounce_Poster.jpg",
+      "video": {
+        "1080p": "https://videos.ctfassets.net/bs8ntwkklfua/195OvtNqDiSyW9eRP59bfi/2cd29b687d52ae9b6a4952550332fc1d/The_Big_Bounce_Wow_1_1080p.mp4",
+        "720p": "https://videos.ctfassets.net/bs8ntwkklfua/1jEHNocn9fDkbrYcdbyX5y/b487ab613d42adb47513258f7f7fef85/The_Big_Bounce_Wow_1_720p.mp4",
+        "480p": "https://videos.ctfassets.net/bs8ntwkklfua/3ogRIfOVNRYtzwHpmFpA5h/767a64e3126da088d60b52f4d50bb6f3/The_Big_Bounce_Wow_1_480p.mp4",
+        "360p": "https://videos.ctfassets.net/bs8ntwkklfua/2Sdmp9PAZjqn38NMYLO7uj/ae96551dd43eedc55395ff294d20334f/The_Big_Bounce_Wow_1_360p.mp4"
+      },
+      "audio": "https://assets.ctfassets.net/bs8ntwkklfua/6bkPu90XhX0wNMpjDhiDzv/cdeebac93089ea56eac605592f7fb21c/The_Big_Bounce_Wow_1.mp3"
+    }
+]
+    
