@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import MovieSceneList from './movies/MovieSceneList';
 
 import '../styles/App.scss';
 
@@ -28,17 +29,10 @@ function App() {
         <input type="search" placeholder="Año de la película" />
       </form>
 
-      <ul className="list-container">
+      <MovieSceneList
+        movies={movies}>
+      </MovieSceneList>
 
-        {movies.map((oneMovie) => <li key={oneMovie.timestamp} 
-        className="card">
-          <img src= {oneMovie.poster} alt="" />
-          <h3>{oneMovie.movie} {oneMovie.year}</h3>
-          <p>{oneMovie.full_line}</p>
-        </li>
-        )}
-
-      </ul>
     </div>
   );
 }
