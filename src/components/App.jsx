@@ -11,6 +11,8 @@ function App() {
 
   const [movies, setMovies] = useState([]);
   const [filterName, setFilterName] = useState('');
+  const [filterYear, setFilterYear] = useState('');
+
 
   useEffect(() => {
     fetch('https://owen-wilson-wow-api.onrender.com/wows/random?results=50')
@@ -28,13 +30,20 @@ function App() {
     setFilterName(ev.target.value);
   }
 
+  const handleInputFilterYear = (ev) => {
+    setFilterYear(ev.target.value);
+  };
+
 
   console.log(movies);
 
   const filteredMovies = movies.filter(
     movie =>
-      movie.movie.toLocaleLowerCase().includes(filterName.toLocaleLowerCase())
+      movie.movie.toLocaleLowerCase().includes(filterName.toLocaleLowerCase()) &&
+      (filterYear === '' || movie.year.toString() === filterYear)
   );
+
+  const years = [...new Set(movies.map(movie => movie.year))].sort((a, b) => b - a);
 
   return (
     <div>
@@ -43,30 +52,35 @@ function App() {
         <p className='header_text'>Busca el WOW de Owen Wilson que mas te guste</p>
       </header>
 
-      <form className="search_container">
-        <label htmlFor="movie">Película:</label>
-        <input
-          type="search"
-          placeholder="Nombre de la película"
-          onInput={handleInputFilterName}
-          value={filterName}
-        />
+      <main>
 
-        <label htmlFor="">Año:</label>
-        <input type="search"
-          placeholder="Año de la película"
+        <form className="search_container">
+          <label htmlFor="movie">Película:</label>
+          <input
+            type="search"
+            placeholder="Nombre de la película"
+            onInput={handleInputFilterName}
+            value={filterName}
+          />
 
-        />
-      </form>
+          <label htmlFor="">Año:</label>
+          <select id="year" value={filterYear}
+            onChange={handleInputFilterYear}>
+            <option value="">Todos los años</option>
+            {years.map(year => (
+              <option key={year} value={year}>{year}</option>
+            ))}
+          </select>
+        </form>
 
-      {movies.length === 0 ? (
-        <p>No tenemos esa película 🥲 </p>
-      ) : (
-        <MovieSceneList
-          movies={filteredMovies}>
-        </MovieSceneList>
-      )}
-
+        {movies.length === 0 ? (
+          <p>No tenemos esa película 🥲 </p>
+        ) : (
+          <MovieSceneList
+            movies={filteredMovies}>
+          </MovieSceneList>
+        )}
+      </main>
     </div>
   );
 }
