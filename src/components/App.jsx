@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import MovieSceneList from './movies/MovieSceneList';
 
 import '../styles/App.scss';
 
-import moviesJson from '../data/movies.json';
+
 
 
 
@@ -11,7 +11,16 @@ function App() {
 
   //VARIABLES DE ESTADO
 
-  const [movies, setMovies] = useState(moviesJson);
+  const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    fetch('https://owen-wilson-wow-api.onrender.com/wows/random?results=50')
+      .then(response => response.json())
+      .then(moviesJson => {
+        setMovies(moviesJson);
+      });
+
+  }, []);
 
 
   return (
@@ -29,9 +38,14 @@ function App() {
         <input type="search" placeholder="Año de la película" />
       </form>
 
-      <MovieSceneList
-        movies={movies}>
-      </MovieSceneList>
+      {movies.length === 0
+        ?
+        <p>No tenemos esa película 🥲 </p>
+        :
+        <MovieSceneList
+          movies={movies}>
+        </MovieSceneList>
+      }
 
     </div>
   );
