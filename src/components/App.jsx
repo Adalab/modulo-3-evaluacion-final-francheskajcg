@@ -5,13 +5,12 @@ import '../styles/App.scss';
 
 
 
-
-
 function App() {
 
   //VARIABLES DE ESTADO
 
   const [movies, setMovies] = useState([]);
+  const [filterName, setFilterName] = useState('');
 
   useEffect(() => {
     fetch('https://owen-wilson-wow-api.onrender.com/wows/random?results=50')
@@ -22,6 +21,20 @@ function App() {
 
   }, []);
 
+  //SECCIÓN DE EVENTOS
+
+  const handleInputFilterName = (ev) => {
+    ev.preventDefault();
+    setFilterName(ev.target.value);
+  }
+
+
+  console.log(movies);
+
+  const filteredMovies = movies.filter(
+    movie =>
+      movie.movie.toLocaleLowerCase().includes(filterName.toLocaleLowerCase())
+  );
 
   return (
     <div>
@@ -32,20 +45,27 @@ function App() {
 
       <form className="search_container">
         <label htmlFor="movie">Película:</label>
-        <input type="search" placeholder="Nombre de la película" />
+        <input
+          type="search"
+          placeholder="Nombre de la película"
+          onInput={handleInputFilterName}
+          value={filterName}
+        />
 
         <label htmlFor="">Año:</label>
-        <input type="search" placeholder="Año de la película" />
+        <input type="search"
+          placeholder="Año de la película"
+
+        />
       </form>
 
-      {movies.length === 0
-        ?
+      {movies.length === 0 ? (
         <p>No tenemos esa película 🥲 </p>
-        :
+      ) : (
         <MovieSceneList
-          movies={movies}>
+          movies={filteredMovies}>
         </MovieSceneList>
-      }
+      )}
 
     </div>
   );
