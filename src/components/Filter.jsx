@@ -1,6 +1,6 @@
 
 
-function Filter(handleInputFilterName, handleInputFilterYear, years, filterName, filterYear) {
+function Filter({ handleInputFilterName, handleInputFilterYear, years, filterName, filterYear }) {
 
     return (
         <>

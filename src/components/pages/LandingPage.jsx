@@ -1,25 +1,34 @@
 import PropTypes from 'prop-types';
 
 import MovieSceneList from '../movies/MovieSceneList';
+import Filter from '../Filter';
 
-function LandingPage({ movies }) {
+function LandingPage({ movies, handleInputFilterName, handleInputFilterYear, years, filterName, filterYear }) {
 
     return (
         <>
 
-            {movies.length === 0 ? (
-                <p>No tenemos esa película 🥲 </p>
-            ) : (
-                <MovieSceneList
-                    movies={movies}>
-                </MovieSceneList>
-            )}
+            <Filter handleInputFilterName={handleInputFilterName}
+                handleInputFilterYear={handleInputFilterYear}
+                years={years}
+                filterName={filterName}
+                filterYear={filterYear}></Filter >
+
+            {
+                movies.length === 0 ? (
+                    <p>No tenemos esa película 🥲 </p>
+                ) : (
+                    <MovieSceneList
+                        movies={movies}>
+                    </MovieSceneList>
+                )
+            }
         </>
     );
 }
 
 
-MovieSceneList.propTypes = {
+LandingPage.propTypes = {
     movies: PropTypes.array
 };
 
