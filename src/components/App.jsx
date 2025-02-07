@@ -1,7 +1,14 @@
 import { useEffect, useState } from 'react';
-import MovieSceneList from './movies/MovieSceneList';
+
 
 import '../styles/App.scss';
+import { Routes } from 'react-router';
+import { Route } from 'react-router';
+import LandingPage from './pages/LandingPage';
+import DetailPage from './pages/DetailPage';
+import Header from './Header'
+
+
 
 
 
@@ -13,15 +20,15 @@ function App() {
   const [filterName, setFilterName] = useState('');
   const [filterYear, setFilterYear] = useState('');
 
-
+  //cambiar direccion
   useEffect(() => {
-    fetch('https://owen-wilson-wow-api.onrender.com/wows/random?results=50')
+    fetch(`https://owen-wilson-wow-api.onrender.com/wows/random?results=50&movie=${filterName}`)
       .then(response => response.json())
       .then(moviesJson => {
         setMovies(moviesJson);
       });
 
-  }, []);
+  }, [filterName]);
 
   //SECCIÓN DE EVENTOS
 
@@ -39,7 +46,7 @@ function App() {
 
   const filteredMovies = movies.filter(
     movie =>
-      movie.movie.toLocaleLowerCase().includes(filterName.toLocaleLowerCase()) &&
+
       (filterYear === '' || movie.year.toString() === filterYear)
   );
 
@@ -47,41 +54,25 @@ function App() {
 
   return (
     <div>
-      <header className='header'>
-        <h1 className='header_title'>Owen Wilson y sus WOW</h1>
-        <p className='header_text'>Busca el WOW de Owen Wilson que mas te guste</p>
-      </header>
+      <Header></Header>
 
       <main>
 
-        <form className="search_container">
-          <label htmlFor="movie">Película:</label>
-          <input
-            type="search"
-            placeholder="Nombre de la película"
-            onInput={handleInputFilterName}
-            value={filterName}
-          />
 
-          <label htmlFor="">Año:</label>
-          <select id="year" value={filterYear}
-            onChange={handleInputFilterYear}>
-            <option value="">Todos los años</option>
-            {years.map(year => (
-              <option key={year} value={year}>{year}</option>
-            ))}
-          </select>
-        </form>
+        <Routes>
+          <Route index element={<LandingPage movies={filteredMovies}
+            handleInputFilterName={handleInputFilterName}
+            handleInputFilterYear={handleInputFilterYear}
+            years={years}
+            filterName={filterName}
+            filterYear={filterYear} />}></Route>
+          <Route path="detail/:name" element={<DetailPage />}></Route>
+        </Routes>
 
-        {movies.length === 0 ? (
-          <p>No tenemos esa película 🥲 </p>
-        ) : (
-          <MovieSceneList
-            movies={filteredMovies}>
-          </MovieSceneList>
-        )}
+
+
       </main>
-    </div>
+    </div >
   );
 }
 
