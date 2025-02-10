@@ -30,11 +30,11 @@ function LandingPage({ movies, handleInputFilterName, handleInputFilterYear, yea
 
 LandingPage.propTypes = {
     movies: PropTypes.array,
-    handleInputFilterName: PropTypes.object,
-    handleInputFilterYear: PropTypes.object,
-    years: PropTypes.object,
-    filterName: PropTypes.object,
-    filterYear: PropTypes.object
+    handleInputFilterName: PropTypes.func,
+    handleInputFilterYear: PropTypes.func,
+    years: PropTypes.array,
+    filterName: PropTypes.string,
+    filterYear: PropTypes.string
 
 };
 

@@ -20,12 +20,12 @@ function DetailPage({ movies }) {
     };
 
     return (
-        <div className="pageContainer">
+        <div className="detailPage">
 
-            <div className="detailMovie">
-                <img className="detailMovie_img" src={movieDetail.poster} alt={movieDetail.movie} />
+            <div className="detailPage_movie">
+                <img className="detailPage_img" src={movieDetail.poster} alt={movieDetail.movie} />
                 <h1>{movieDetail.movie}</h1>
-                <p className="textDetail">Director: {movieDetail.director}</p>
+                <p className="detailPage_text">Director: {movieDetail.director}</p>
                 <p>{movieDetail.full_line}</p>
                 <p>
                     <a

@@ -1,0 +1,75 @@
+.detailPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+
+
+
+    &_movie {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+        border-radius: 15px;
+        width: 90%;
+        max-width: 600px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        overflow: hidden;
+    }
+
+    &_img {
+        width: 220px;
+        height: 330px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+    }
+
+
+    &_title {
+        font-size: 32px;
+        color: #333;
+        margin: 10px 0;
+    }
+
+    &_text {
+        font-weight: bold;
+    }
+}
+
+.audioLink {
+    font-size: 18px;
+    color: #7a993d;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+.audioLink:hover {
+    background-color: #7a993d;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #7a993d;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5a7a2d;
+}

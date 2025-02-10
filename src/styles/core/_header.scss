@@ -1,0 +1,17 @@
+.header {
+    padding: 20px;
+    margin-bottom: 20px;
+
+
+    &_title {
+        color: #7a993d;
+        margin-bottom: 10px;
+        font-size: 32px;
+    }
+
+
+    &_text {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}

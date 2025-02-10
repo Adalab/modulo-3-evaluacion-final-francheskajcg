@@ -23,13 +23,13 @@ function App() {
 
 
   useEffect(() => {
-    fetch(`https://owen-wilson-wow-api.onrender.com/wows/random?results=50&movie=${filterName, filterYear}`)
+    fetch(`https://owen-wilson-wow-api.onrender.com/wows/random?results=50&movie=${filterName}`)
       .then(response => response.json())
       .then(moviesJson => {
         setMovies(moviesJson);
       });
 
-  }, [filterName, filterYear]);
+  }, [filterName]);
 
   //SECCIÓN DE EVENTOS
 
@@ -50,7 +50,10 @@ function App() {
     (filterYear === '' || movie.year.toString() === filterYear)
   );
 
+
   const years = [...new Set(movies.map(movie => movie.year))].sort((a, b) => b - a);
+
+
 
 
   return (

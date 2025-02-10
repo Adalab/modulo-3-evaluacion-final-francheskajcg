@@ -28,11 +28,12 @@ function Filter({ handleInputFilterName, handleInputFilterYear, years, filterNam
 
 
 Filter.propTypes = {
-    handleInputFilterName: PropTypes.object,
-    handleInputFilterYear: PropTypes.object,
-    years: PropTypes.object,
-    filterName: PropTypes.object,
-    filterYear: PropTypes.object
+
+    handleInputFilterName: PropTypes.func,
+    handleInputFilterYear: PropTypes.func,
+    years: PropTypes.array,
+    filterName: PropTypes.string,
+    filterYear: PropTypes.string
 
 };
 export default Filter;

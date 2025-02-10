@@ -7,7 +7,7 @@ function MovieSceneItem({ oneMovie }) {
         <Link to={"detail/" + oneMovie.movie}>
 
             <img src={oneMovie.poster} alt="" />
-            <h3>{oneMovie.movie} {oneMovie.year}</h3>
+            <h3>{oneMovie.movie} - {oneMovie.year}</h3>
             <p>{oneMovie.full_line}</p>
 
         </Link>
