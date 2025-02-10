@@ -67,7 +67,7 @@ function App() {
             years={years}
             filterName={filterName}
             filterYear={filterYear} />}></Route>
-          <Route path="detail/:name" element={<DetailPage />}></Route>
+          <Route path="detail/:movie" element={<DetailPage movies={movies} />}></Route>
           <Route path="*" element={<p>Error 404</p>}></Route>
         </Routes>
 

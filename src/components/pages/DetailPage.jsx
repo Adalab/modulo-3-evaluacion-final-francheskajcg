@@ -1,23 +1,45 @@
 
 
-import { Link } from "react-router";
+import { Link, useParams } from "react-router";
 
 
 
-function DetailPage() {
+function DetailPage({ movies }) {
 
+    const params = useParams();
 
+    console.log(params.movie);
+
+    const movieDetail = movies.find(movieDetailObj => movieDetailObj.movie === params.movie)
+
+    if (!movieDetail) {
+        return (
+            <div className="pageContainer">
+                <h1>Película no encontrada</h1>
+                <Link to="/" className="btn">Volver</Link>
+            </div>
+        );
+    }
 
     return (
         <div className="pageContainer">
             <div className="detailMovie">
-                <img className="detailMovie_img" src="https://hips.hearstapps.com/hmg-prod/images/mv5bzmjknzviyjytzwzlny00oge4lwi2-642b0b32296a0.jpeg?crop=0.9881422924901185xw:1xh;center,top&resize=980:*" alt="" />
-                <h1> peli </h1>
-                <p>wow</p>
-                <p>link audio</p>
+                <img className="detailMovie_img" src={movieDetail.poster} alt={movieDetail.movie} />
+                <h1>{movieDetail.movie}</h1>
+                <p>{movieDetail.full_line}</p>
+                <p>
+                    <a
+                        href={movieDetail.audio}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="audioLink"
+                    >
+                        Escuchar audio de la escena
+                    </a>
+                </p>
             </div>
 
-            <Link to="/" className="btn"></Link>
+            <Link to="/" className="btn">Volver</Link>
         </div>
 
     );
