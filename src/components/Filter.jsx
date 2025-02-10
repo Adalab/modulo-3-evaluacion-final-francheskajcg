@@ -8,7 +8,7 @@ function Filter({ handleInputFilterName, handleInputFilterYear, years, filterNam
                 <label htmlFor="movie">Película:</label>
                 <input
                     type="search"
-                    placeholder="Nombre de la película"
+                    placeholder="Filtra por película"
                     onInput={handleInputFilterName}
                     value={filterName}
                 />
@@ -16,7 +16,7 @@ function Filter({ handleInputFilterName, handleInputFilterYear, years, filterNam
                 <label htmlFor="">Año:</label>
                 <select id="year" value={filterYear}
                     onChange={handleInputFilterYear}>
-                    <option value="">Todos los años</option>
+                    <option value="">Selecciona el año</option>
                     {years.map(year => (
                         <option key={year} value={year}>{year}</option>
                     ))}

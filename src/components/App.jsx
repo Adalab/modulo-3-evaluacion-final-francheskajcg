@@ -12,6 +12,7 @@ import Header from './Header'
 
 
 
+
 function App() {
 
   //VARIABLES DE ESTADO
@@ -20,15 +21,15 @@ function App() {
   const [filterName, setFilterName] = useState('');
   const [filterYear, setFilterYear] = useState('');
 
-  //cambiar direccion
+
   useEffect(() => {
-    fetch(`https://owen-wilson-wow-api.onrender.com/wows/random?results=50&movie=${filterName}`)
+    fetch(`https://owen-wilson-wow-api.onrender.com/wows/random?results=50&movie=${filterName, filterYear}`)
       .then(response => response.json())
       .then(moviesJson => {
         setMovies(moviesJson);
       });
 
-  }, [filterName]);
+  }, [filterName, filterYear]);
 
   //SECCIÓN DE EVENTOS
 
@@ -44,10 +45,9 @@ function App() {
 
   console.log(movies);
 
-  const filteredMovies = movies.filter(
-    movie =>
-
-      (filterYear === '' || movie.year.toString() === filterYear)
+  const filteredMovies = movies.filter(movie =>
+    movie.movie.toLowerCase().includes(filterName.toLowerCase()) &&
+    (filterYear === '' || movie.year.toString() === filterYear)
   );
 
   const years = [...new Set(movies.map(movie => movie.year))].sort((a, b) => b - a);
@@ -55,7 +55,9 @@ function App() {
 
   return (
     <div>
-      <Header></Header>
+      <Header>
+
+      </Header>
 
       <main>
 
