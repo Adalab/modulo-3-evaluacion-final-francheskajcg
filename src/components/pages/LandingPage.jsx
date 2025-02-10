@@ -29,7 +29,13 @@ function LandingPage({ movies, handleInputFilterName, handleInputFilterYear, yea
 
 
 LandingPage.propTypes = {
-    movies: PropTypes.array
+    movies: PropTypes.array,
+    handleInputFilterName: PropTypes.object,
+    handleInputFilterYear: PropTypes.object,
+    years: PropTypes.object,
+    filterName: PropTypes.object,
+    filterYear: PropTypes.object
+
 };
 
 export default LandingPage;

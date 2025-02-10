@@ -52,6 +52,7 @@ function App() {
 
   const years = [...new Set(movies.map(movie => movie.year))].sort((a, b) => b - a);
 
+
   return (
     <div>
       <Header></Header>
@@ -67,6 +68,7 @@ function App() {
             filterName={filterName}
             filterYear={filterYear} />}></Route>
           <Route path="detail/:name" element={<DetailPage />}></Route>
+          <Route path="*" element={<p>Error 404</p>}></Route>
         </Routes>
 
 

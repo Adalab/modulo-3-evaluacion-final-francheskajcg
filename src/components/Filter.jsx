@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 function Filter({ handleInputFilterName, handleInputFilterYear, years, filterName, filterYear }) {
 
@@ -26,4 +26,13 @@ function Filter({ handleInputFilterName, handleInputFilterYear, years, filterNam
     );
 }
 
+
+Filter.propTypes = {
+    handleInputFilterName: PropTypes.object,
+    handleInputFilterYear: PropTypes.object,
+    years: PropTypes.object,
+    filterName: PropTypes.object,
+    filterYear: PropTypes.object
+
+};
 export default Filter;
