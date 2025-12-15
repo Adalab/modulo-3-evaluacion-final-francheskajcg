@@ -12,7 +12,7 @@ function DetailPage({ movies }) {
 
     if (!movieDetail) {
         return (
-            <div className="pageContainer">
+            <div className="detailPage">
                 <h1>Película no encontrada</h1>
                 <Link to="/" className="btn">Volver</Link>
             </div>

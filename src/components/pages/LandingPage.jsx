@@ -20,6 +20,8 @@ function LandingPage({ movies, handleInputFilterName, handleInputFilterYear, yea
                 ) : (
                     <MovieSceneList
                         movies={movies}>
+                        movies={filterName}
+
                     </MovieSceneList>
                 )
             }

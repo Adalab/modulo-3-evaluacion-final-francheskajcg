@@ -1,21 +1,64 @@
 .card {
     background: white;
-    padding: 10px;
-    border-radius: 10px;
-    width: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     text-align: center;
     list-style: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(122, 153, 61, 0.1) 0%, rgba(122, 153, 61, 0.2) 100%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+    }
+
+    &:hover {
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: 0 20px 40px rgba(122, 153, 61, 0.3);
+
+        &::before {
+            opacity: 1;
+        }
+
+        img {
+            transform: scale(1.05);
+        }
+
+        p {
+            color: #7a993d;
+        }
+    }
 }
 
 .card img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+    position: relative;
+    z-index: 2;
+    aspect-ratio: 3/4;
+    object-fit: cover;
 }
 
 .card p {
-    font-weight: bold;
+    font-weight: 700;
     color: #7a993d;
+    margin-top: 15px;
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease;
 }
 
 a {

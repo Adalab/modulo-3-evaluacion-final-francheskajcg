@@ -3,43 +3,52 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f4f4f4;
-    padding: 20px;
-
-
+    padding: 40px 20px;
 
     &_movie {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: white;
-        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 30px;
         width: 90%;
-        max-width: 600px;
-        padding: 20px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        max-width: 700px;
+        padding: 40px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
         text-align: center;
         overflow: hidden;
+        animation: fadeInUp 0.6s ease;
     }
 
     &_img {
-        width: 220px;
-        height: 330px;
+        width: 280px;
+        height: 420px;
         object-fit: cover;
-        border-radius: 10px;
-        margin-bottom: 20px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
 
+        &:hover {
+            transform: scale(1.02);
+        }
     }
 
-
     &_title {
-        font-size: 32px;
-        color: #333;
-        margin: 10px 0;
+        font-size: 42px;
+        color: #7a993d;
+        margin: 15px 0;
+        font-weight: 800;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     &_text {
-        font-weight: bold;
+        font-weight: 600;
+        color: #555;
+        font-size: 18px;
+        margin: 10px 0;
+        line-height: 1.6;
     }
 }
 
@@ -47,29 +56,30 @@
     font-size: 18px;
     color: #7a993d;
     text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #f0f0f0;
-    transition: background-color 0.3s ease;
-}
-
-.audioLink:hover {
-    background-color: #7a993d;
-    color: white;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #7a993d;
-    color: white;
+    font-weight: 700;
     padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    background: rgba(122, 153, 61, 0.1);
+    border-radius: 15px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    border: 2px solid #7a993d;
+
+    &:hover {
+        background: #7a993d;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(122, 153, 61, 0.4);
+    }
 }
 
-.btn:hover {
-    background-color: #5a7a2d;
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
